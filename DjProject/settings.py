@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'projects.apps.ProjectsConfig',
     'catogery.apps.CatogeryConfig',
+    'commentes.apps.CommentesConfig',
+    'reports.apps.ReportsConfig',
+    'chat.apps.ChatConfig',
     
 ]
 
@@ -120,8 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -132,5 +135,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 LOGIN_URL='login'
-#on login sucess
+
 LOGIN_REDIRECT_URL='home'
