@@ -80,9 +80,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'your email'  # Replace with your actual email address
-EMAIL_HOST_PASSWORD = 'your password'  # Replace with your actual email password
-DEFAULT_FROM_EMAIL = 'your email'  # Replace with your actual email address
+EMAIL_HOST_USER = " # your email address"
+EMAIL_HOST_PASSWORD = 'password' # your email password
+DEFAULT_FROM_EMAIL = '# your email address'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
@@ -128,8 +128,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+
 STATIC_URL = 'static/'
-STATICFILES_DIRS=['static']
+STATIC_ROOT = BASE_DIR / 'static/'
 
 
 # Default primary key field type

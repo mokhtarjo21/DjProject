@@ -14,5 +14,5 @@ def home(request):
 
     # print("Email sent successfully!")
 
-    return render(request, 'basic.html')
+    return render(request, 'users/active.html')
 # Create your views here.
